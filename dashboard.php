@@ -109,7 +109,7 @@ padding: 20px;
 <div class="dropdown">
 <div class="profile-btn" onclick="toggleMenu()">Profile ▾</div>
 <div class="dropdown-content" id="profileMenu">
-<a href="dashboard.php?page=list_produk">List Produk</a>
+<a href="dashboard.php?page=list_produk">My Profile</a>
 <a href="#">Logout</a>
 </div>
 </div>
