@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'koneksi.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -98,17 +99,17 @@ padding: 20px;
 <body>
 <div class="sidebar">
 <h2>Dashboard</h2>
-<a href="#">Home</a>
-<a href="#">List Produk</a>
-<a href="#">Customer</a>
-<a href="#">Transaksi</a>
-<a href="#">Laporan</a>
+<a href="dashboard.php?page=home">Home</a>
+<a href="dashboard.php?page=list_produk">List Produk</a>
+<a href="dashboard.php?page=customer">Customer</a>
+<a href="dashboard.php?page=transaksi">Transaksi</a>
+<a href="dashboard.php?page=laporan">Laporan</a>
 </div>
 <div class="header">
 <div class="dropdown">
 <div class="profile-btn" onclick="toggleMenu()">Profile ▾</div>
 <div class="dropdown-content" id="profileMenu">
-<a href="dashboard.php?page=profile">My Profile</a>
+<a href="dashboard.php?page=list_produk">List Produk</a>
 <a href="#">Logout</a>
 </div>
 </div>
