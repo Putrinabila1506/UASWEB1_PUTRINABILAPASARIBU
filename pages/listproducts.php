@@ -1,15 +1,6 @@
 <?php
-$root_path = dirname(__FILE__, 2); // Naik 2 level ke root
-include $root_path . '/koneksi.php';
-
-// Cek koneksi
-if (!isset($conn)) {
-    die("❌ Variabel \$conn tidak ada di koneksi.php");
-}
-
-$data = mysqli_query($conn, "SELECT * FROM barang ORDER BY id_barang ASC");
+$data = mysqli_query($conn, "SELECT * FROM barang");
 ?>
-
 <style>
 .card {
 background: white;
